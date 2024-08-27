@@ -2,11 +2,11 @@
   "flyers": [
     {
       "title": "the 1st flyer",
-      "url": ""
+      "url": "https://raw.githubusercontent.com/wfchiang/bulletin-board/main/sample_contents/sample_flyer_1.png"
     },
     {
       "title": "the 2nd flyer",
-      "url": ""
+      "url": "https://raw.githubusercontent.com/wfchiang/bulletin-board/main/sample_contents/sample_flyer_2.png"
     }
   ]
 }
