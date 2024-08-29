@@ -6,6 +6,7 @@ import 'package:logger/logger.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:bulletin_board/splash_screen.dart';
 
 
 /*
@@ -47,7 +48,11 @@ class MyApp extends StatelessWidget {
       future: loadYamlFile(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return const CircularProgressIndicator();
+          // return const CircularProgressIndicator();
+          return MaterialApp(
+            title: 'J & J & J',
+            home: SplashScreen()
+          );
         } else if (snapshot.hasError) {
           String errorMessage = snapshot.error.toString();
           rootLogger.e(errorMessage);
